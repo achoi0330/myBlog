@@ -9,7 +9,7 @@ function BlogPost(props) {
     const post = props.data.markdownRemark;
     const url = props.data.site.siteMetadata.siteUrl;
     const {title, description} = post.frontmatter;
-    const thumbnail = post.frontmatter.image.childImageSharp.resize.src;
+    const thumbnail = post.frontmatter.image == null ? '' : post.frontmatter.image.childImageSharp.resize.src;
 
     return (
         <Layout>
