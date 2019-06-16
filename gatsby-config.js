@@ -6,6 +6,7 @@ module.exports = {
     siteUrl: `localhost:8000`,
   },
   plugins: [
+    `gatsby-plugin-netlify`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
